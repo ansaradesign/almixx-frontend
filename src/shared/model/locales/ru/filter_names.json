@@ -1,0 +1,488 @@
+{
+  "transportation_type": {
+    "cars": "Автомобили",
+    "motorcycles_and_motorized_vehicles": "Мототехника",
+    "trucks_and_special_vehicles": "Грузовики и спецтехника",
+    "water_transportation": "Водный транспорт"
+  },
+  "cars_type": {
+    "with_mileage": "C пробегом",
+    "new": "Новые"
+  },
+  "motorcycles_and_motorized_vehicles_type": {
+  "all-terrain_vehicles": "Кроссовые",
+  "karting": "Картинги",
+  "mopeds_and_scooters": "Мопеды и скутеры",
+  "motorcycles": "Мотоциклы",
+  "snowmobiles": "Снегоходы",
+  "atvs_and_buggies": "ATV и багги"
+},
+"trucks_and_special_vehicles_type": {
+  "buses": "Автобусы",
+  "motorhomes": "Дома на колёсах",
+  "truck_cranes": "Грузовые краны",
+  "bulldozers": "Бульдозеры",
+  "trucks": "Грузовики",
+  "utility_equipment": "Коммунальный транспорт",
+  "light_commercial_vehicles": "Легкие коммерческие автомобили",
+  "attachments": "Навесное оборудование",
+  "loaders": "Погрузчики",
+  "trailers": "Прицепы",
+  "agricultural_machinery": "Сельскохозяйственная техника",
+  "construction_equipment": "Строительное оборудование",
+  "logging_machinery": "Лесозаготовительная техника",
+  "tractors": "Тракторы",
+  "excavators": "Экскаваторы",
+  "other": "Другое"
+},
+"water_transportation_type": {
+  "paddleboats": "Водные велосипеды",
+  "jet_skis": "Гидроциклы",
+  "boats_and_yachts": "Лодки и яхты",
+  "motor_boats_and_motors": "Моторные лодки и моторы"
+},
+  "real_estate_type": {
+    "apartments": "Квартира",
+    "room": "Комната",
+    "house": "Дом",
+    "stead": "Земельный участок",
+    "garage": "Гараж",
+    "commercial": "Коммерческая недвижимость"
+  },
+  "apartments_buy_type": {
+    "for_sale": "Купить",
+    "rent": "Снять"
+  },
+  "room_buy_type": {
+    "for_sale": "Купить",
+    "rent": "Снять"
+  },
+  "house_buy_type": {
+    "for_sale": "Купить",
+    "rent": "Снять"
+  },
+  "stead_buy_type": {
+    "for_sale": "Купить",
+    "rent": "Снять"
+  },
+  "garage_buy_type": {
+    "for_sale": "Купить",
+    "rent": "Снять"
+  },
+  "commercial_buy_type": {
+    "for_sale": "Купить",
+    "rent": "Снять"
+  },
+  "target_age": {
+    "new": "Новостройки",
+    "old": "Вторичка"
+  },
+  "apartments_buy_rooms_count": {
+    "studio": "Студия",
+    "one": "1 + 1",
+    "two": "2 + 1",
+    "three": "3 + 1",
+    "four": "4 + 1",
+    "more": "5 + 2 и более"
+  },
+  "apartment_rent_rooms_count": {
+    "studio": "Студия",
+    "one": "1 + 1",
+    "two": "2 + 1",
+    "three": "3 + 1",
+    "four": "4 + 1",
+    "more": "5 + 2 и более"
+  },
+  "room_buy_rooms_count": {
+    "studio": "Студия",
+    "one": "1 + 1",
+    "two": "2 + 1",
+    "three": "3 + 1",
+    "four": "4 + 1",
+    "more": "5 + 2 и более"
+  },
+  "room_rent_rooms_count": {
+    "studio": "Студия",
+    "one": "1 + 1",
+    "two": "2 + 1",
+    "three": "3 + 1",
+    "four": "4 + 1",
+    "more": "5 + 2 и более"
+  },
+  "period": {
+    "long": "Долгосрочно",
+    "daily": "Посуточно"
+  },
+  "house_target_type": {
+    "house": "Дом",
+    "dacha": "Дача",
+    "cottage": "Коттедж",
+    "townhouse": "Таунхаус"
+  },
+  "garage_type": {
+    "garage": "Гаражи",
+    "car_place": "Машиноместа"
+  },
+  "comm_target_type": {
+    "office": "Офис",
+    "free_type": "Свободного назначения",
+    "square": "Торговая площадь",
+    "warehouse": "Склад",
+    "prom": "Производство",
+    "food": "Общепит",
+    "hostel": "Гостиница",
+    "car_service": "Автосервис",
+    "house": "Здание"
+  },
+  "stead_target_type": {
+    "IZHS": "ИЖС",
+    "SNT": "СНТ",
+    "promotional": "Промназначение"
+  },
+  "secure": {
+    "with_secure": "С охраной",
+    "no_secure": "Без охраны"
+  },
+  "services_type": {
+    "consumer_services": "Потребительские услуги",
+    "business_services": "Услуги для бизнеса",
+    "products_and_specialized_services": "Продукты и специализированные услуги"
+  },
+  "consumer_services_type":{
+    "domestic_services": "Бытовые услуги",
+    "babysitters_caregivers": "Няни, сиделки",
+    "beauty_health": "Красота и здоровье",
+    "handyman": "Мастер",
+    "cleaning": "Уборка",
+    "mounting_and_installation_of_appliances": "Монтаж и установка приборов",
+    "animal_care": "Забота о животных",
+    "garbage_and_recyclables_removal": "Вывоз мусора и вторсырья",
+    "car_service_rental": "Аренда авто"
+  },
+  "requests_type":{
+    "consumer_services": "Потребительские услуги",
+    "business_services": "Услуги для бизнеса",
+    "products_and_specialized_services": "Продукты и специализированные услуги"
+  },
+  "business_services_type":{
+    "business_services":"Услуги для бизнеса",
+    "advertising_printing": "Рекламная полиграфия",
+    "training_courses":"Учебные курсы",
+    "safety_security": "Безопастность",
+    "computer_help": "Компьютерная помощь",
+    "repair_and_maintenance_of_equipment": "Ремонт и обслуживание оборудования",
+    "loaders_warehousing_services": "Cкладские услуги погрузчиков",
+    "trucking": "Грузоперевозки",
+    "passenger_transportation": "Пассажирские перевозки"
+  },
+  "products_and_specialized_services_type":{
+    "art":"Искусство",
+    "equipment_production": "Производство оборудования",
+    "food_and_grocery_delivery":"Доставка еды и продуктов",
+    "holidays_events": "Праздничные мероприятия",
+    "construction": "Cтроительство",
+    "garden_landscaping": "Ландшафтный дизайн сада",
+    "services_эвакуатора": "Услуги эвакуатора",
+    "repair_and_decoration": "Ремонт и отделка",
+    "photography_and_videography": "Фото и видео",
+    "other": "Другое"
+  },
+  "electronics_type":{
+    "audio_and_video": "Звук и видео",
+    "games_consoles_and_programs": "Игровые консоли и программы",
+    "desktop_computers": "Настольные компьютеры",
+    "office_equipment_and_consumables": "Офисное оборудование и расходные материалы",
+    "tablets_and_e": "Планшеты",
+    "telephones": "Телефоны",
+    "computer_goods": "Компьютерные товары",
+    "photographic_equipment":"Фото оборудование"
+  },
+  "audio_and_video_type":{
+    "mp3_players": "Mp3 плееры",
+    "acoustics_speakers_subwoofers": "Акустика, колонки, сабвуферы",
+    "video_dvd_and_blu-ray_players": "Видео-DVD и Blu-Ray проигрователи",
+    "video_cameras": "Видео камеры",
+    "cables_and_adapters": "Кабели и адаптеры",
+    "microphones": "Микрофоны",
+    "music_and_movies": "Музыка и фильмы",
+    "music_centers_stereos": "Музыкальные центры, стереосистемы",
+    "headphones": "Наушники",
+    "tvs_and_projectors": "Телевизоры и проекторы",
+    "amplifiers_and_receivers": "Усилители и ресиверы",
+    "accessories": "Аксессуары",
+    "laptops": "Ноутбуки",
+    "games_for_consoles": "Игры для консолей",
+    "game_consoles": "Игровые консоли",
+    "computer_games": "Компьютерные игры",
+    "programs": "Программы"
+  },
+  "desktop_computers_type":{
+    "system_units": "Системные блоки",
+    "monoblocks": "Моноблоки",
+    "other": "Другое"
+  },
+  "office_equipment_type":{
+    "mfps_copiers_and_scanners": "Многофункциональные копиры и сканеры",
+    "printers": "Принтеры",
+    "telephony": "Телефония",
+    "ups_surge_protectors": "Защитные устройства для ИБП",
+    "paper_shredders": "Измельчители бумаги",
+    "consumables": "Расходные материалы",
+    "chancery": "Канцелярия"
+  },
+  "tablets_type": {
+    "tablets": "Планшеты",
+    "e-books": "Электронные книги",
+    "accessories": "Аксессуары"
+  },
+  "telephones_type": {
+    "cell_phones": "Сотовые телефоны",
+    "walkie-talkies": "Рации",
+    "landline_phones": "Стационарные телефоны",
+    "accessories": "Аксессуары"
+  },
+  "computer_goods_type":{
+    "acoustics": "Акустика",
+    "webcams": "Веб-камеры",
+    "joysticks_and_steering_wheels": "Джойстики и рули",
+    "keyboards_and_mice": "Клавиатуры и мыши",
+    "monitors": "Мониторы",
+    "portable_hard_disks": "Портативные жесткие диски",
+    "network_equipment": "Сетевое оборудование",
+    "tv_tuners": "ТВ-тюнеры",
+    "flash_drives_and_memory_cards": "Флешки и карты памяти",
+    "accessories": "Аксессуары"
+  },
+  "photographic_equipment_type":{
+    "compact_cameras": "Компактные камеры",
+    "mirror_cameras": "Зеркальные камеры",
+    "film_cameras": "Пленочные фотоаппараты",
+    "binoculars_and_telescopes": "Бинокли и телескопы",
+    "lenses": "Линзы",
+    "equipment_and_accessories": "Оборудование и аксессуары"
+  },
+  "personal_effects_type":{
+    "clothing": "Одежда",
+    "footwear": "Обувь",
+    "watches_and_jewelry": "Наручные часы и украшения",
+    "gadgets_and_electronics": "Гаджеты и электроника",
+    "bags_and_accessories": "Сумки и аксессуары",
+    "perfumes_and_cosmetics": "Парфюмерия и косметика"
+  },
+  "clothing_type":{
+    "tops": "Топы",
+    "bottoms": "Брюки и юбки",
+    "outerwear": "Верхняя одежда",
+    "dresses": "Платья",
+    "activewear": "Спортивная одежда",
+    "underwear": "Нижнее белье"
+  },
+  "footwear_type":{
+    "sneakers": "Кроссовки",
+    "boots": "Ботинки",
+    "sandals": "Сандалии",
+    "formal_shoes": "Официальная обувь",
+    "slippers": "Тапочки",
+    "athletic_shoes": "Обувь"
+  },
+  "watches_and_jewelry_type":{
+    "watches": "Наручные часы",
+    "necklaces": "Ожерелья",
+    "bracelets": "Браслеты",
+    "earrings": "Серьги",
+    "rings": "Кольца",
+    "brooches": "Броши"
+  },
+  "gadgets_and_electronics_type":{
+    "smartphones": "Наручные часы",
+    "tablets": "Планшеты",
+    "laptops": "Ноутбуки",
+    "smartwatches": "Умные часы",
+    "headphones": "Наушники",
+    "gaming_consoles": "Игровые консоли"
+  },
+  "bags_and_accessories_type":{
+    "handbags": "Cумки",
+    "backpacks": "Рюкзаки",
+    "wallets": "Кошельки",
+    "belts": "Ремни",
+    "hats": "Головные уборы",
+    "sunglasses": "Солнцезащитные очки"
+  },
+  "perfumes_and_cosmetics_type":{
+    "fragrances": "Ароматы",
+    "makeup": "Макияж",
+    "skincare": "Уход за кожей",
+    "haircare": "Уход за волосами",
+    "nail_polish": "Лак для ногтей",
+    "men's_grooming": "Мужской уход"
+  },
+  "for_home_and_cottage_type":{
+    "furniture": "Мебель",
+    "decor": "Декор",
+    "gardening": "Уход за садом",
+    "appliances": "Техника",
+    "renovation_and_building_materials": "Ремонт и строительные материалы",
+    "sauna_and_bath": "Cауна и баня"
+  },
+  "furniture_type":{
+    "living_room": "Гостиная",
+    "bedroom": "Спальня",
+    "dining_room": "Кухня",
+    "office": "Офис",
+    "outdoor": "Для улицы",
+    "storage": "Хранение"
+  },
+  "decor_type":{
+    "wall_art": "Настенный художественный декор",
+    "lighting": "Осветительные приборы",
+    "rugs": "Ковры",
+    "mirrors": "Зеркала",
+    "clocks": "Настенные часы",
+    "candles": "Свечи"
+  },
+  "gardening_type":{
+    "plants": "Растения",
+    "tools": "Инструменты",
+    "fertilizers": "Удобрения",
+    "pots_and_planters": "Горшки и кашпо",
+    "garden_furniture": "Садовая мебель",
+    "water_features": "Сантехника"
+  },
+  "appliances_type":{
+    "kitchen_appliances": "Кухонные приборы",
+    "laundry_appliances": "Стиральная техника",
+    "vacuum_cleaners": "Пылесосы",
+    "air_conditioners": "Кондиционеры",
+    "heaters": "Обогреватели",
+    "fans": "Вентиляторы"
+  },
+  "renovation_and_building_materials_type":{
+    "paint": "Краска",
+    "flooring": "Напольное покрытие",
+    "tiles": "Плитка",
+    "plumbing": "Сантехника",
+    "electrical": "Электрика",
+    "lumber": "Пиломатериалы"
+  },
+  "sauna_and_bath_type":{
+    "saunas": "Сауны",
+    "hot_tubs": "Гидромассажные ванны",
+    "steam_rooms": "Паровые бани",
+    "showers": "Души",
+    "bathtubs": "Ванны",
+    "bath_accessories": "Банные принадлежности"
+  },
+  "spare_parts_and_accessories_type":{
+    "car_parts": "Автомобильные запчасти",
+    "computer_components": "Компьютерные компоненты",
+    "household_appliances": "Бытовая техника",
+    "tools": "Инструменты",
+    "bicycle_parts": "Велосипедные запчасти",
+    "mobile_phone_accessories": "Аксессуары для мобильных телефонов"
+  },
+  "car_parts_type":{
+    "engine_parts": "Детали двигателя",
+    "brake_systems": "Тормозные системы",
+    "suspension": "Подвеска",
+    "exhaust_systems": "Выхлопные системы",
+    "transmissions": "Коробки передач",
+    "car_accessories": "Автомобильные аксессуары"
+  },
+  "computer_components_type":{
+    "processors": "Процессоры",
+    "motherboards": "Материнские платы",
+    "graphics_cards": "Видеокарты",
+    "memory": "Память",
+    "storage_devices": "Накопители",
+    "cooling_systems": "Системы охлаждения"
+  }, 
+  "household_appliances_type":{
+    "fridge_parts": "Части холодильника",
+    "washing_machine_parts": "Запчасти для стиральных машин",
+    "microwave_parts": "Части микроволновой печи",
+    "oven_parts": "Части духовки",
+    "vacuum_cleaner_parts": "Части пылесоса",
+    "air_conditioner_parts": "Части кондиционера"
+  },
+  "tools_type":{
+    "hand_tools": "Ручные инструменты",
+    "power_tools": "Электроинструменты",
+    "gardening_tools": "Садовые инструменты",
+    "measuring_tools": "Измерительные инструменты",
+    "tool_accessories": "Аксессуары для инструментов",
+    "tool_storage": "Хранение инструментов"
+  },
+  "bicycle_parts_type":{
+    "frames": "Рамы",
+    "wheels": "Колеса",
+    "tires": "Шины",
+    "brakes": "тормоза",
+    "gears": "Шестерни",
+    "saddles": "Сиденья"
+  },
+  "mobile_phone_accessories_type":{
+    "cases": "Чехлы",
+    "screen_protectors": "Защитные стекла и пленки",
+    "chargers": "Зарядные устройства",
+    "headphones": "Наушники",
+    "mounts": "Крепления",
+    "cables": "Кабели"
+  },
+  "events_type":{
+    "weddings": "Свадьбы",
+    "corporate_events": "Корпоративные мероприятия",
+    "birthdays": "Дни рождения",
+    "conferences": "Конференции",
+    "festivals": "Фестивали",
+    "parties": "Вечеринки"
+  },
+  "weddings_type":{
+    "ceremony": "Церемония",
+    "reception": "Прием",
+    "bridal_party": "Свадебная вечеринка",
+    "guest_list": "Список гостей",
+    "invitations": "Приглашения",
+    "decorations": "Украшения"
+  },
+  "corporate_events_type":{
+    "meetings": "Митинги",
+    "seminars": "Семинары",
+    "trade_shows": "Выставки",
+    "team_building": "Построение команды",
+    "product_launches": "Запуск продукта",
+    "holiday_parties": "Праздничные вечеринки"
+  },
+  "birthdays_type":{
+    "kids_parties": "Вечеринки для детей",
+    "adult_parties": "Вечеринки для взрослых",
+    "theme_parties": "Тематические вечеринки",
+    "surprise_parties": "Вечеринки-сюрпризы",
+    "milestone_birthdays": "Юбилейные дни рождения",
+    "birthday_cakes": "Торты на день рождения"
+  },
+  "conferences_type":{
+    "keynote_speeches": "Программные выступления",
+    "workshops": "Cеминары",
+    "networking": "Нетворкинг",
+    "panel_discussions": "Панельные дискуссии",
+    "breakout_sessions": "Секционные заседания",
+    "exhibitor_booths": "Выставочные стенды"
+  },
+  "festivals_type":{
+    "music_festivals": "Музыкальные фестивали",
+    "food_festivals": "Кулинарные фестивали",
+    "cultural_festivals": "Культурные фестивали",
+    "film_festivals": "Кинофестивали",
+    "literary_festivals": "Литературные фестивали",
+    "art_festivals": "Фестивали искусств"
+  },
+  "parties_type":{
+    "house_parties": "Домашние вечеринки",
+    "costume_parties": "Корпоративные мероприятия",
+    "pool_parties": "Костюмированные вечеринки",
+    "dinner_parties": "Званые обеды",
+    "garden_parties": "Вечеринки в саду",
+    "cocktail_parties": "Коктейльные вечеринки"
+  }
+}

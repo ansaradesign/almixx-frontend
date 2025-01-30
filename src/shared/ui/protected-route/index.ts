@@ -1,0 +1,1 @@
+export { ProtectedRouteMessage } from './ui';
