@@ -68,7 +68,7 @@ export const ModalSubscriptionConfirmation = ({ setScreen }: Props) => {
       {amount && (
         <m.div layout className='w-full px-6 py-4'>
           <NotificationBubble type='error'>
-            На вашем балансе нехватает {amount} ₽ для покупки. <br />
+            На вашем балансе нехватает {amount} € для покупки. <br />
             <button
               type='button'
               className='underline cursor-pointer'

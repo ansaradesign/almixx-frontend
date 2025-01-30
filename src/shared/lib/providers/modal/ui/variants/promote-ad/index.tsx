@@ -42,8 +42,8 @@ export const ModalVariantPromoteAd = () => {
       getPromotionPlans(
         {
           category: 'real_estate',
-          currency: 'RUB',
-          price: 100000,
+          currency: 'EUR',
+          price: 1000,
         },
         token as string,
       ),
@@ -147,8 +147,8 @@ export const ModalVariantPromoteAd = () => {
               ? normalizePrice({
                 price: data.wallet,
                 currencies,
-                currency: 'RUB',
-                adCurrency: 'RUB',
+                currency: 'EUR',
+                adCurrency: 'EUR',
               })
               : 'Неизвестно'}
           </p>

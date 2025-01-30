@@ -9,7 +9,7 @@ import Link from 'next/link';
 import {
   PiCaretDownBold,
   PiCaretRightBold,
-  PiCurrencyRubBold,
+  PiCurrencyEurBold,
   PiFilesBold,
   PiMapPinBold,
   PiQuestionBold,
@@ -115,12 +115,12 @@ export const MenuAside = ({ onClose }: Props) => {
             <Button className='w-full bg-[--bg] dark:bg-[--element] shadow-base h-28 rounded-3xl flex flex-col gap-0 items-start justify-between p-4 relative'>
               <div className='flex flex-col gap-0 justify-start items-start'>
                 <p className='font-semibold text-md'>Валюта</p>
-                <p className='font-semibold text-md opacity-60'>RUB</p>
+                <p className='font-semibold text-md opacity-60'>EUR</p>
               </div>
 
               <PiCaretDownBold size={20} className='opacity-50' />
 
-              <PiCurrencyRubBold
+              <PiCurrencyEurBold
                 size={80}
                 className='absolute -bottom-2 -right-2 flex-shrink-0 !max-w-full opacity-10'
               />
@@ -130,10 +130,10 @@ export const MenuAside = ({ onClose }: Props) => {
             closeOnSelect={false}
             disallowEmptySelection
             selectionMode='single'
-            selectedKeys={new Set(['rub'])}
+            selectedKeys={new Set(['eur'])}
             aria-label='Currency selector'
           >
-            <DropdownItem key='rub'>RUB</DropdownItem>
+            <DropdownItem key='eur'>EUR</DropdownItem>
           </DropdownMenu>
         </Dropdown>
       </div>

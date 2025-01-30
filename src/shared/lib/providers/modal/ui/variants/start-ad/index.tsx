@@ -90,7 +90,7 @@ export const ModalVariantStartAd = () => {
           <h2 className='font-medium text-neutral-500'>
             Стоимость размещения объявления
           </h2>
-          <p className='text-xl font-semibold'>{data?.price} ₽ / сутки</p>
+          <p className='text-xl font-semibold'>€{data?.price} / сутки</p>
         </div>
 
         <div className='w-full flex flex-col gap-2'>
@@ -141,13 +141,14 @@ export const ModalVariantStartAd = () => {
             Итоговая стоимость размещения
           </h2>
           <p className='text-xl font-semibold'>
+          €
             {calcStartAdPrice(
               data?.price as number,
               'daily',
               paymentPeriod as 'daily' | 'weekly' | 'monthly',
               activeOptionData?.cost as number,
             )}{' '}
-            ₽ / сутки
+             / сутки
           </p>
         </div>
 
@@ -161,13 +162,14 @@ export const ModalVariantStartAd = () => {
         >
           <PiPlayCircleBold size={22} />
           Оплатить{' '}
+          €
           {calcStartAdPrice(
             data?.price as number,
             paymentPeriod as 'daily' | 'weekly' | 'monthly',
             paymentPeriod as 'daily' | 'weekly' | 'monthly',
             activeOptionData?.cost as number,
           )}{' '}
-          ₽ и запустить
+           и запустить
         </Button>
       </div>
     </>

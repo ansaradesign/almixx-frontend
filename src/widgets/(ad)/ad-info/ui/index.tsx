@@ -13,6 +13,7 @@ export const AdInfo = async ({ data, lng }: Props) => {
 
   const additionalArray = Object.entries(data.ad.additional);
 
+
   return (
     <div className='flex flex-col gap-8'>
       {additionalArray.length > 0 && (

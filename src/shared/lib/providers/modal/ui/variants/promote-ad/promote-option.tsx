@@ -42,7 +42,7 @@ export const PromoteOption = ({
           >
             {title}
           </span>{' '}
-          <span>· {price} ₽ / сутки</span>
+          <span>· €{price} / сутки</span>
         </h4>
         {properties.map((prop) => (
           <p key={prop} className='w-full text-wrap opacity-50'>

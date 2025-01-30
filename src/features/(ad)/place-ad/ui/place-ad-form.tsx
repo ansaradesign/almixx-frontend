@@ -51,6 +51,7 @@ export const PlaceAdForm = ({ formData }: Props) => {
 
     setFormError(null);
 
+    
     const formCopy = _.cloneDeep(form);
     const photoFormData = new FormData();
     const photos = form.fields.photo as File[];

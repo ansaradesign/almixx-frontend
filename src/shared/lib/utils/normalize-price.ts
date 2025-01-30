@@ -8,11 +8,10 @@ type Props = {
 export const normalizePrice = ({
   price,
   currencies,
-  currency = 'USD',
-  adCurrency = 'USD',
+  currency = 'EUR',
+  adCurrency = 'EUR',
 }: Props) => {
   const locales = {
-    RUB: 'ru-RU',
     USD: 'en-US',
     EUR: 'en-GB',
   } as any;

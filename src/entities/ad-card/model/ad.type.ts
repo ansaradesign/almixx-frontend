@@ -43,7 +43,7 @@ export type PublicAdType = {
   };
   hash: string;
   category_id: number;
-  currency: 'RUB' | 'USD' | 'EUR';
+  currency: 'EUR';
   status: 'active' | 'moderating' | 'archived' | 'ended';
   category: string[];
   image: {

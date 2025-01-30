@@ -19,8 +19,8 @@ export const Balance = async () => {
       <h3 className='text-5xl md:text-7xl font-semibold'>
         {normalizePrice({
           price: user.money,
-          currency: 'RUB',
-          adCurrency: 'RUB',
+          currency: 'EUR',
+          adCurrency: 'EUR',
           currencies,
         })}
       </h3>

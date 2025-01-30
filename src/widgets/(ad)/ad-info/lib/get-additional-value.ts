@@ -16,5 +16,6 @@ export const getAdditionalValue = ({ t, value, category, key }: Props) => {
     ? value
     : t(`${fullKey}.${value}`);
 
+
   return Number(value) ? value : strValue;
 };

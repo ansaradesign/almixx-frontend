@@ -25,6 +25,8 @@ export const PlaceAdPrice = memo(
     const [cookie] = useCookies();
     const { currency } = cookie;
 
+    console.log(currency)
+
     const handleChange = (e: any) => {
       const { value: inputValue } = e.target;
 
@@ -54,12 +56,12 @@ export const PlaceAdPrice = memo(
             type='text'
             autoComplete='cc-number'
             inputMode='numeric'
-            placeholder='10000'
+            placeholder='100'
             min={1}
             value={value?.value || ''}
             onChange={handleChange}
           />
-          <p className='opacity-50 text-3xl'>₽</p>
+          <p className='opacity-50 text-3xl'>€</p>
         </div>
 
         <AnimatePresence>

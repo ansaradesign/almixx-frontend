@@ -58,8 +58,8 @@ export const BillingForm = () => {
   const [normSum] = useState(
     normalizePrice({
       price: 100,
-      currency: 'RUB',
-      adCurrency: 'RUB',
+      currency: 'EUR',
+      adCurrency: 'EUR',
       currencies,
     }),
   );

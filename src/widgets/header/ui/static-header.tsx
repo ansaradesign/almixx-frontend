@@ -12,8 +12,8 @@ export const StaticHeader = () => {
   return (
     <div className='flex flex-row gap-4 lg:gap-8 max-w-7xl px-4 w-full items-center'>
       <div className='w-28 hidden md:flex flex-col gap-2 pt-1 flex-shrink-0'>
-        <Link href='/'>
-          <AlbomoniSvg />
+        <Link href='/' className='font-extrabold text-xl leading-4'>
+          ALMIXX
         </Link>
 
         <Link

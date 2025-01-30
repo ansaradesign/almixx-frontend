@@ -11,7 +11,7 @@ export const WelcomeBlockScreen = () => {
           <div className='w-4 h-4 rounded-full border-3 border-white/40' />
         </div>
         <div className='h-full w-full border-3 border-white/40 rounded-xl flex justify-center items-center '>
-          <p className='text-sm text-white'>albomoni.com</p>
+          <p className='text-sm text-white'>almixx.com</p>
         </div>
       </div>
       <div className='w-full h-full rounded-xl bg-white/30 overflow-hidden shadow-inner'>

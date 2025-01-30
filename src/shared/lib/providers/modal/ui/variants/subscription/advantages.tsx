@@ -66,7 +66,7 @@ export const ModalSubscriptionAdvantages = ({ setScreen }: Props) => {
             onPress={handleClickConfirm}
             className='w-full bg-gradient-to-r to-indigo-700 from-red-500 font-medium text-white'
           >
-            Оформить за 5000 ₽ в месяц
+            Оформить за 50 € в месяц
           </Button>
         )}
 
