@@ -15,3 +15,7 @@ lint:
 
 host:
 	npm run host
+	
+pre-commit:
+	npx lint-staged
+	make build
