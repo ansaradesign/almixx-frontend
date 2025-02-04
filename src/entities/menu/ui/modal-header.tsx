@@ -25,8 +25,8 @@ export const ModalHeader = ({ onClose }: Props) => {
     <header className='w-full h-20 flex flex-row justify-center z-30'>
       <div className='flex flex-row gap-4 lg:gap-8 max-w-7xl px-4 w-full items-center justify-between'>
         <div className='w-28 flex flex-col gap-2 pt-1 flex-shrink-0'>
-          <Link href='/' onClick={onClose}>
-            <AlbomoniSvg />
+          <Link href='/' onClick={onClose} className='font-extrabold text-xl leading-4'>
+            ALMIXX
           </Link>
 
           <Link
