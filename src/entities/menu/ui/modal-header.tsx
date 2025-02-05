@@ -1,6 +1,5 @@
 import { Search } from '@albomoni/features/search';
 import { getLocation } from '@albomoni/shared/lib/utils/get-location';
-import { AlbomoniSvg } from '@albomoni/shared/ui/logo';
 import { Button } from '@nextui-org/react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';

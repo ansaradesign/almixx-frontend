@@ -1,7 +1,6 @@
 import { MenuButton } from '@albomoni/entities/menu';
 import { Search } from '@albomoni/features/search';
 import { getLocation } from '@albomoni/shared/lib/utils/get-location';
-import { AlbomoniSvg } from '@albomoni/shared/ui/logo';
 import { Skeleton } from '@nextui-org/skeleton';
 import Link from 'next/link';
 import { PiMapPinBold } from 'react-icons/pi';

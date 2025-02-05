@@ -1,5 +1,4 @@
 import { LoginWidget } from '@albomoni/features/(auth)/login';
-import { AlbomoniSvg } from '@albomoni/shared/ui/logo';
 import Link from 'next/link';
 import { PiXBold } from 'react-icons/pi';
 
@@ -11,9 +10,9 @@ export const LoginPage = () => {
           <button
             type='button'
             aria-label='Logo'
-            className='w-[132px] flex items-center justify-center'
+            className='w-[132px] flex items-center justify-center font-extrabold text-xl leading-4'
           >
-            <AlbomoniSvg />
+            ALMIXX
           </button>
         </Link>
 
