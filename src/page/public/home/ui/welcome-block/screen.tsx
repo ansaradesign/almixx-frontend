@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import profile from '../../../../../shared/assets/profile.jpg';
+import profile from '../../../../../shared/assets/profile.png';
 
 export const WelcomeBlockScreen = () => {
   return (

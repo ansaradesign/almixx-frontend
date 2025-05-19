@@ -13,12 +13,14 @@ export const PlaceAdAutocomplete = memo(
     const { t } = useClientTranslation('place-ad');
     const category = useCategory();
 
-    const handleChange = (selected: Key) => {
-      updateForm((draft: any) => {
-        draft.errors[title] = null;
-        draft.fields[title] = selected;
-      });
-    };
+  const handleChange = (selected: Key | null) => {
+  if (selected !== null) {
+    updateForm((draft: any) => {
+      draft.errors[title] = null;
+      draft.fields[title] = selected;
+    });
+  }
+};
 
     const preventResizeError = (e: any) => {
       if (

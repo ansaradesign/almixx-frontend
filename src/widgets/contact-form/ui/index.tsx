@@ -47,6 +47,21 @@ export const ContactForm = () => {
     e.preventDefault();
 
     const selectedVariant = selectedContactVariant.values().next().value;
+     if (!selectedVariant) {
+      alert('Пожалуйста, выберите вариант обращения');
+      return;
+    }
+
+    if (!email) {
+      setIsValidEmail(false);
+      return;
+    }
+
+    if (!appeal) {
+      setIsValidAppeal(false);
+      return;
+    }
+    
     const formData = {
       email,
       selectedContactVariant: selectedVariant,
