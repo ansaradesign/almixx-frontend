@@ -1,0 +1,9 @@
+{
+  "registration": {
+    "title": "Вход и регистрация",
+    "validation": {
+      "email": "Введите корректный email",
+      "required": "Это обязательное поле"
+    }
+  }
+}

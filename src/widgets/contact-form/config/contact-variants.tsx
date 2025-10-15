@@ -1,0 +1,1 @@
+export const ContactVariants = ['question', 'bug', 'feature', 'feedback', 'other'];

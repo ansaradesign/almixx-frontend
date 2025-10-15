@@ -1,0 +1,116 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .shadow-base {
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
+  }
+  .gradient-background {
+    background: linear-gradient(0deg, var(--error), var(--accent), #9500ff);
+    animation: gradient-animation 4s infinite linear;
+  }
+}
+
+:root {
+  --text: #000000;
+  --inv-text: #ffffff;
+  --accent: rgb(0, 82, 204);
+  --bg: #ffffff;
+  --bg-light: #f3f3f3;
+  --scrollbar: #c0c0c0;
+  --element: rgb(244, 244, 245);
+  --element-hover: rgb(241, 241, 241);
+  --success: rgb(40, 199, 0);
+  --warning: rgb(238, 192, 8);
+  --error: rgb(229, 12, 12);
+}
+
+[class='dark'],
+[class='dark with-fancybox'] {
+  --text: #ffffff;
+  --inv-text: #000000;
+  --accent: rgb(0, 82, 204);
+  --bg: #000000;
+  --bg-light: #141414;
+  --scrollbar: #2b2b2b;
+  --element: rgb(39, 39, 42);
+  --element-hover: rgb(47, 47, 50);
+  --success: rgb(23, 186, 15);
+  --warning: rgb(229, 200, 12);
+  --error: rgb(233, 22, 22);
+}
+
+html,
+body {
+  color: var(--text);
+  background: var(--bg) !important;
+}
+
+body {
+  width: 100%;
+  user-select: none;
+  cursor: default;
+  min-height: 100vh;
+  overflow-y: scroll;
+  box-sizing: border-box;
+  position: relative;
+  -webkit-tap-highlight-color: transparent;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  letter-spacing: -0.02em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Scrollbar */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--scrollbar) transparent;
+}
+
+/* Scrollbar for WebKit (Chrome, Safari) */
+/* *::-webkit-scrollbar {
+  width: 6px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--scrollbar);
+  border-radius: 5px;
+}
+
+*::-webkit-scrollbar-track {
+  background-color: transparent;
+} */
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0 1000px transparent inset !important;
+  -webkit-text-fill-color: var(--text) !important;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+@keyframes gradient-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

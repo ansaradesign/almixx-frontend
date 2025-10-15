@@ -1,0 +1,62 @@
+{
+  "short-description": "Доска объявлений",
+  "create-ad": "Разместить объявление",
+  "my-ads": "Мои объявления",
+  "messages": "Сообщения",
+  "featured": "Избранное",
+  "my-profile": "Мой профиль",
+  "metadata": {
+    "title": "Almixx",
+    "description": "Сервис для размещения заказов и услуг"
+  },
+  "theme": {
+    "name": "Оформление",
+    "light": "Светлое",
+    "dark": "Тёмное",
+    "system": "Системное"
+  },
+  "header": {
+    "categories": "Все категории",
+    "search-placeholder": "Поиск по объявлениям",
+    "search-button": "Поиск"
+  },
+  "pages": {
+    "main": "Главная",
+    "favorite": "Избранное",
+    "place-ad": "Создать объявление",
+    "messages": "Сообщения",
+    "profile": "Профиль"
+  },
+  "categories": {
+    "transportation": "Транспорт",
+    "real_estate": "Недвижимость",
+    "services": "Услуги",
+    "requests": "Заявка на услуги",
+    "personal_effects": "Личные вещи",
+    "for_home_and_cottage": "Для дома и дачи",
+    "spare_parts_and_accessories": "Запчасти и аксессуары",
+    "electronics": "Техника",
+    "events_celebrations": "Мероприятия, праздники"
+  },
+  "feedback": {
+    "t_one": "{{count}} оценка",
+    "t_few": "{{count}} оценки",
+    "t_many": "{{count}} оценок"
+  },
+  "active_ads_count": {
+    "t_one": "{{count}} активное объявление",
+    "t_few": "{{count}} активных объявления",
+    "t_many": "{{count}} активных объявлений"
+  },
+  "ended_ads_count": {
+    "t_one": "{{count}} завершённая сделка",
+    "t_few": "{{count}} завершённые сделки",
+    "t_many": "{{count}} завершённых сделок"
+  },
+  "tabs": {
+    "active": "Активные",
+    "moderating": "На проверке",
+    "ended": "Завершённые",
+    "archived": "Архив"
+  }
+}

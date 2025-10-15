@@ -1,0 +1,107 @@
+.fancybox__toolbar {
+  padding: 16px;
+}
+
+.fancybox__toolbar,
+.fancybox__nav {
+  --f-button-border-radius: 0;
+  --f-button-bg: rgba(0, 0, 0, 0);
+  --f-button-hover-bg: rgba(0, 0, 0, 0);
+  --f-button-active-bg: rgba(0, 0, 0, 0);
+}
+
+.fancybox__backdrop {
+  opacity: var(--fancybox-backdrop-opacity, 1);
+  background-color: black;
+}
+
+@media (max-width: 499px) {
+  .f-button {
+    opacity: 0;
+  }
+}
+
+.f-carousel__dots {
+  --f-carousel-dots-width: 20px;
+  --f-carousel-dots-height: 20px;
+
+  bottom: 8px;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(20px);
+  width: fit-content;
+  border-radius: 10px;
+}
+
+.f-carousel__dot {
+  --f-carousel-dot-color: white;
+}
+
+.f-carousel.has-dots {
+  margin-bottom: 0;
+}
+
+.f-button.is-prev {
+  --f-button-prev-pos: 0;
+  --f-button-hover-color: white;
+  height: 100%;
+  top: 0 !important;
+  transform: translateY(0) !important;
+}
+
+.f-button.is-next {
+  --f-button-next-pos: 0;
+  --f-button-hover-color: white;
+  height: 100%;
+  top: 0 !important;
+  transform: translateY(0) !important;
+}
+
+/* .f-button.is-prev:hover {
+  background: rgb(0, 0, 0);
+  background: -moz-linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.5) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  background: -webkit-linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.5) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.5) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#000000",GradientType=1);
+}
+
+.f-button.is-next:hover {
+  background: rgb(0, 0, 0);
+  background: -moz-linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.5) 100%
+  );
+  background: -webkit-linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.5) 100%
+  );
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.5) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#000000",GradientType=1);
+} */
+
+@media (min-width: 1024px) {
+  .f-carousel__viewport {
+    border-radius: 12px;
+  }
+
+  .f-button {
+    color: white;
+  }
+}
