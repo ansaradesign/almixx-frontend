@@ -19,6 +19,8 @@ export type UserType = {
   views: number[];
   date_joined: string;
   description: string;
+  promo_code?: string;
+  used_promo?: boolean;
 } & TLocation;
 
 export type PublicUserType = {
