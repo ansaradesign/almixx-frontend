@@ -4,6 +4,6 @@ export const editUserField = (
   query: { [key: string]: string } | FormData,
   token: string,
 ) =>
-  apiClient.post('edit-user', query, {
+  apiClient.post('edit-user/', query, {
     Authorization: `Bearer ${token}`,
   });

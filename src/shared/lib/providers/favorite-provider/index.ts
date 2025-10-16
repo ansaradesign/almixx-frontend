@@ -22,7 +22,7 @@ export const FavoriteProvider = ({ children }: Props) => {
     const loadFavorites = async () => {
       try {
         const resp = await apiClient.get<number[]>(
-          'favorites',
+          'favorites/',
           {},
           { Authorization: `Bearer ${token}` },
         );

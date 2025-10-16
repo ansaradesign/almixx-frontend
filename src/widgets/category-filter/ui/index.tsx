@@ -18,7 +18,7 @@ type Props = {
 export const CategoryFilter = ({ categoryId, searchParams }: Props) => {
   const { data, isLoading, isPending } = useQuery<any>({
     queryKey: ['category-filter'],
-    queryFn: () => apiClient.get('place-filters'),
+    queryFn: () => apiClient.get('place-filters/'),
   });
 
   const [filterState, setFilterState] = useState<{
