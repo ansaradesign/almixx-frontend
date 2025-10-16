@@ -17,7 +17,7 @@ export const LogoutButton = () => {
   return (
     <Button
       size='lg'
-      className='w-full md:w-48 h-14 text-danger font-medium bg-white dark:bg-default shadow-base rounded-2xl'
+      className='w-full h-14 text-danger font-medium bg-white dark:bg-default shadow-base rounded-2xl'
       onPress={handleLogout}
     >
       Выйти

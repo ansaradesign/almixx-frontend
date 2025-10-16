@@ -3,7 +3,6 @@ import {
   PiCaretRightBold,
   PiPencilSimpleBold,
   PiWalletBold,
-  PiUsersThreeBold,
 } from 'react-icons/pi';
 
 export const ProfileMainControls = () => {
@@ -30,19 +29,6 @@ export const ProfileMainControls = () => {
           <div className='flex gap-3 items-center'>
             <PiWalletBold size={18} />
             Кошелёк
-          </div>
-          <PiCaretRightBold size={18} className='opacity-50' />
-        </button>
-      </Link>
-
-      <Link href='/profile/referral'>
-        <button
-          type='button'
-          className='w-full shadow-base px-5 py-4 dark:bg-default-100 rounded-2xl font-medium flex justify-between items-center hover:scale-[1.02] active:scale-[0.98] transition-transform'
-        >
-          <div className='flex gap-3 items-center'>
-            <PiUsersThreeBold size={18} />
-            Реферальная программа
           </div>
           <PiCaretRightBold size={18} className='opacity-50' />
         </button>
