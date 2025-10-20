@@ -1,7 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
-import { useSearchParams } from 'next/navigation';
+import { useState } from 'react';
 import { ERegistrationRoutes } from '../model/registration-routes.enum';
 import { RegistrationEmail } from './routes/email';
 import { RegistrationEmailConfirm } from './routes/email-confirm';
@@ -9,17 +8,8 @@ import { RegistrationUserData } from './routes/user-data';
 import { RegistrationComplete } from './routes/complete';
 
 export const RegistrationWidget = () => {
-  const searchParams = useSearchParams();
   const [activeRoute, setActiveRoute] = useState(ERegistrationRoutes.EMAIL);
   const [userEmail, setUserEmail] = useState('');
-  const [promoCode, setPromoCode] = useState('');
-
-  useEffect(() => {
-    const promo = searchParams.get('promo');
-    if (promo) {
-      setPromoCode(promo);
-    }
-  }, [searchParams]);
 
   const Routes = {
     [ERegistrationRoutes.EMAIL]: RegistrationEmail,
@@ -39,7 +29,6 @@ export const RegistrationWidget = () => {
         setActiveRoute={setActiveRoute}
         userEmail={userEmail}
         setUserEmail={setUserEmail}
-        promoCode={promoCode}
       />
     </div>
   );

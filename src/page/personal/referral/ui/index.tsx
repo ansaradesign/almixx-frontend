@@ -18,7 +18,6 @@ import {
 export const ReferralPage = () => {
   const { user, setUser } = useSession();
   const [promoCode, setPromoCode] = useState('');
-  const [referralLink, setReferralLink] = useState('');
   const [inputPromoCode, setInputPromoCode] = useState('');
   const [isLoading, setIsLoading] = useState(false);
   const [isCopied, setIsCopied] = useState(false);
@@ -34,9 +33,6 @@ export const ReferralPage = () => {
           setUser(userData);
           if (userData.promo_code) {
             setPromoCode(userData.promo_code);
-            setReferralLink(
-              `${window.location.origin}/registration?promo=${userData.promo_code}`,
-            );
           }
         } catch (error) {
           console.error('Error loading user data:', error);
@@ -49,8 +45,8 @@ export const ReferralPage = () => {
     loadUserData();
   }, []);
 
-  const handleCopyLink = () => {
-    navigator.clipboard.writeText(referralLink);
+  const handleCopyPromo = () => {
+    navigator.clipboard.writeText(promoCode);
     setIsCopied(true);
     setTimeout(() => setIsCopied(false), 2000);
   };
@@ -103,41 +99,39 @@ export const ReferralPage = () => {
         </h2>
 
         <div className='w-full flex flex-col gap-6'>
-          {/* Блок с реферальной ссылкой */}
+          {/* Блок с промокодом */}
           <div className='shadow-base dark:bg-default-100 rounded-2xl p-5 md:p-6 flex flex-col gap-5'>
             <div className='flex items-center gap-3'>
               <div className='w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center'>
                 <PiGiftBold size={20} className='text-primary' />
               </div>
               <h3 className='text-lg md:text-xl font-semibold'>
-                Ваша реферальная ссылка
+                Ваш промокод
               </h3>
             </div>
 
             {promoCode ? (
               <>
                 <p className='text-sm opacity-70'>
-                  Поделитесь этой ссылкой с друзьями. Когда они
-                  зарегистрируются по вашей ссылке и активируют промокод, вы оба
-                  получите бонусы!
+                  Поделитесь этим промокодом с друзьями. Когда они
+                  активируют его, вы оба получите бонусы!
                 </p>
 
                 <div className='flex flex-col gap-3'>
-                  <div className='flex gap-2'>
-                    <Input
-                      value={referralLink}
-                      readOnly
-                      classNames={{
-                        input: 'text-sm',
-                        inputWrapper:
-                          'bg-default-100 dark:bg-default-50 shadow-sm border-none',
-                      }}
-                    />
+                  <div className='p-4 bg-primary/5 dark:bg-primary/10 rounded-xl border-2 border-primary/20 flex items-center justify-between'>
+                    <div>
+                      <p className='text-sm font-medium opacity-70 mb-1'>
+                        Ваш промокод:
+                      </p>
+                      <p className='text-2xl md:text-3xl font-bold text-primary tracking-wider'>
+                        {promoCode}
+                      </p>
+                    </div>
                     <Button
                       isIconOnly
                       color='primary'
                       variant='shadow'
-                      onClick={handleCopyLink}
+                      onClick={handleCopyPromo}
                       className='flex-shrink-0'
                     >
                       {isCopied ? (
@@ -146,15 +140,6 @@ export const ReferralPage = () => {
                         <PiCopyBold size={20} />
                       )}
                     </Button>
-                  </div>
-
-                  <div className='p-4 bg-primary/5 dark:bg-primary/10 rounded-xl border-2 border-primary/20'>
-                    <p className='text-sm font-medium opacity-70 mb-1'>
-                      Ваш промокод:
-                    </p>
-                    <p className='text-2xl md:text-3xl font-bold text-primary tracking-wider'>
-                      {promoCode}
-                    </p>
                   </div>
                 </div>
               </>
@@ -244,15 +229,15 @@ export const ReferralPage = () => {
             <ul className='text-sm opacity-70 space-y-2 pl-1'>
               <li className='flex gap-2'>
                 <span className='text-primary font-bold'>1.</span>
-                <span>Поделитесь вашей реферальной ссылкой с друзьями</span>
+                <span>Поделитесь вашим промокодом с друзьями</span>
               </li>
               <li className='flex gap-2'>
                 <span className='text-primary font-bold'>2.</span>
-                <span>Ваш друг регистрируется по ссылке</span>
+                <span>Ваш друг регистрируется на платформе</span>
               </li>
               <li className='flex gap-2'>
                 <span className='text-primary font-bold'>3.</span>
-                <span>Друг активирует ваш промокод</span>
+                <span>Друг активирует ваш промокод на странице реферальной программы</span>
               </li>
               <li className='flex gap-2'>
                 <span className='text-primary font-bold'>4.</span>
