@@ -23,6 +23,7 @@ import { ERegistrationRoutes } from '../../model/registration-routes.enum';
 export const RegistrationUserData = ({
   userEmail,
   setActiveRoute,
+  promoCode,
 }: RegistrationRoutesProps) => {
   const { mutateAsync, isPending, isError } = useMutation(SignupQueries);
   const [watchedAds] = useLocalStorage('watched', []);
@@ -56,6 +57,20 @@ export const RegistrationUserData = ({
         { favorites, views: watchedAds },
         { Authorization: `Bearer ${access}` },
       );
+
+      // Автоматическая активация промокода, если он был передан в URL
+      if (promoCode) {
+        try {
+          await apiClient.post(
+            'use-promo/',
+            { promo_code: promoCode },
+            { Authorization: `Bearer ${access}` },
+          );
+        } catch (error) {
+          console.error('Error activating promo code:', error);
+          // Продолжаем регистрацию даже если промокод не активировался
+        }
+      }
 
       const oneDay = 24 * 60 * 60 * 1000;
       const expiresDate = new Date(Date.now() + oneDay * 7);
@@ -97,6 +112,16 @@ export const RegistrationUserData = ({
             <p className='text-sm opacity-50'>
               Завершите регистрацию, указав основные данные для входа в аккаунт.
             </p>
+
+            {promoCode && (
+              <div className='p-3 bg-success/10 border border-success/30 rounded-xl'>
+                <p className='text-sm font-medium text-success'>
+                  🎉 Вы регистрируетесь по реферальной ссылке! Промокод{' '}
+                  <span className='font-bold'>{promoCode}</span> будет
+                  автоматически активирован после регистрации.
+                </p>
+              </div>
+            )}
 
             <Controller
               name='name'

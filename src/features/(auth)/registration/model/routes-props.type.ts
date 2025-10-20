@@ -4,4 +4,5 @@ export type RegistrationRoutesProps = {
   setActiveRoute: (route: ERegistrationRoutes) => void;
   userEmail: string;
   setUserEmail: (email: string) => void;
+  promoCode?: string;
 };
